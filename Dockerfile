@@ -3,8 +3,8 @@
 FROM openclaw/openclaw:2026.10.3-browser@sha256:c84c4c37e7b9dc02dd869c9699ba0c4fb20ff821febe4b789bb2f8f4bfd9c8a3
 
 # Railway volumes mount root-owned, but OpenClaw runs as `node` (uid 1000).
-# Start as root, fix ownership of /data and seed a minimal config, then drop
-# to `node` and hand off to the image's own entrypoint (tini + doctor --fix).
+# Start as root, fix /data ownership, then drop to `node` and hand off to the
+# image's own entrypoint (tini + `openclaw doctor --fix`).
 USER root
 COPY --chmod=755 railway-entrypoint.sh /usr/local/bin/railway-entrypoint.sh
 
