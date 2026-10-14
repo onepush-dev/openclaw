@@ -2,7 +2,9 @@
 
 One-click [OpenClaw](https://github.com/openclaw/openclaw) **2026.10.3**: the self-hosted AI agent gateway with its web Control UI. It runs on the **official image, pinned by digest**, and keeps its state on a Railway volume. You fill in nothing at deploy time.
 
-[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/TEMPLATE_CODE)
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/Oq97C0)
+
+Template: https://railway.com/deploy/Oq97C0 (template editor for maintainers: https://railway.com/workspace/templates/e8e63bf3-0c80-4dd8-8de4-e81a82514e69)
 
 ## What you get
 
